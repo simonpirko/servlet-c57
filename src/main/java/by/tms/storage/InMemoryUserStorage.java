@@ -17,6 +17,7 @@ public class InMemoryUserStorage {
 	public void save(User user) {
 		System.out.println("Hello");
 		user.setId(idGenerator.incrementAndGet());
+		System.out.println("Hello 2");
 		users.add(user);
 	}
 
