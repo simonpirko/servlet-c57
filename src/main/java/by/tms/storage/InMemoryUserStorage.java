@@ -15,6 +15,7 @@ public class InMemoryUserStorage {
 	private static final AtomicLong idGenerator = new AtomicLong(0);
 
 	public void save(User user) {
+		System.out.println("Hello");
 		user.setId(idGenerator.incrementAndGet());
 		users.add(user);
 	}
